@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-3" ng-repeat="movie in vm.movies | orderBy : movie.id">
+    <swm-movie-detail movie="movie">
+      <div class="panel panel-default card">
+        <div class="panel-heading"><img alt="star wars episode {{movie.episode_id}}" ng-src="../../../assets/images/{{movie.episode_id}}.jpg"/></div>
+        <div class="panel-body">
+          <h4>Star Wars Eposiode {{ movie.episode_id }} : {{ movie.title }}</h4>
+        </div>
+      </div>
+    </swm-movie-detail>
+  </div>
+</div>

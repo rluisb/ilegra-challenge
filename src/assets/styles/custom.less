@@ -1,0 +1,26 @@
+@import "Header.less";
+@import "Movies.less";
+
+/*Variables*/
+@bg-header: black;
+
+@background-color: lightgrey;
+
+@table-font-color: #5c5c5c;
+@background-color-lighten: lighten(@background-color, 3%);
+
+/* body */
+body{
+    margin-top: 60px;
+    background-color: @background-color;
+}
+/* fix padding under menu after resize */
+@media only screen and (max-width: 767px) {
+    body { margin-top: 60px; }
+}
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    body { margin-top: 60px; }
+}
+@media only screen and (min-width: 992px) {
+    body { margin-top: 60px; }
+}

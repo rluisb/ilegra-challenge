@@ -1,0 +1,63 @@
+<div class="modal-header">
+  <h4 class="modal-title">Star Wars Eposiode {{ movie.episode_id }} : {{ movie.title }}
+    <button type="button" class="close" ng-click="modal.close('false')" aria-label="Close"><span
+      aria-hidden="true">×</span></button>
+  </h4>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-6">
+      Title:
+    </div>
+    <div class="col-md-6">
+      {{ movie.title }}
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      Episode:
+    </div>
+    <div class="col-md-6">
+      {{ movie.episode_id }}
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      Synopsis:
+    </div>
+    <div class="col-md-6">
+      {{ movie.opening_crawl }}
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      Director:
+    </div>
+    <div class="col-md-6">
+      {{ movie.director }}
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      Producer:
+    </div>
+    <div class="col-md-6">
+      {{ movie.producer }}
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      Release Date:
+    </div>
+    <div class="col-md-6">
+      {{ movie.release_date }}
+    </div>
+  </div>
+  <hr />
+</div>
